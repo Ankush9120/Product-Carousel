@@ -71,14 +71,6 @@ body h1 {
 .carousel.no-transition {
   scroll-behavior: auto;
 }
-.carousel.dragging {
-  scroll-snap-type: none;
-  scroll-behavior: auto;
-}
-.carousel.dragging .card {
-  cursor: grab;
-  user-select: none;
-}
 .carousel :where(.card, .img) {
   display: flex;
   justify-content: center;
