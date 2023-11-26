@@ -3,7 +3,6 @@ const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
 const arrowBtns = document.querySelectorAll(".mainBox .slider-btn");
 const carouselChildrens = [...carousel.children];
-
 let timeoutId;
 
 // Get the number of cards that can fit in the carousel at once
@@ -19,7 +18,7 @@ carouselChildrens.slice(0, cardPerView).forEach(card => {
     carousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
 
-// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+// Scroll the carousel at appropriate postition to hide first few duplicate cards
 carousel.classList.add("no-transition");
 carousel.scrollLeft = carousel.offsetWidth;
 carousel.classList.remove("no-transition");
